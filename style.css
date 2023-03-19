@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, ; 95%);
+}
+
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+
+/* MAIN LAYOUT  */
+
+main {
+    width: 60%;
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 10px;
+}
+
+.image {
+    background-image: url("images/drawers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 300px;
+    border-radius: 10px 0 0 10px;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    width: 60%;
+}
+
+.primary-heading {
+    margin: 10px;
+    font-size: 1.9rem;
+    font-weight: 400;
+}
+
+.showcase-text {
+    margin: 10px;
+    font-size: 1.1rem;
+}
+
+/* Profile Styles */
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image img {
+    margin: 10px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 13px;
+    color: grey;
+}
+
+.button {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+}
+
+#button {
+    background-image: url("images/icon-share.svg");
+}
+
+#button:hover {
+    background-image: url("images/icon-share-white.svg");
+    background-color: hsl(217, 19%, 35%);
+}
+
+#button-mobile {
+    background-image: url("images/icon-share-white.svg");
+    background-color: var(--Desaturated-Dark-Blue);
+}
+
+/* SHARE BOX STYLES */
+
+.share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-desktop {
+    align-self: flex-end;
+    width: 40%;
+    background-color: hsl(217, 19%, 35%);
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 10px;
+    padding: 0.5rem 1.2rem;
+    position: relative;
+    bottom: 80px;
+    left: 9.5rem;
+}
+
+.share-desktop::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid hsl(217, 19%, 35%);
+}
+
+.share-mobile {
+    width: 100%;
+    justify-content: space-between;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    /* padding: 0rem; */
+}
+
+.share-mobile-left {
+    justify-content: space-between;
+}
+
+.share-mobile p,
+.share-desktop p {
+    font-size: 18px;
+    font-weight: lighter;
+    color: white;
+}
+
+.share-mobile > *,
+.share-desktop > *,
+.share-mobile-left > * {
+    margin: 10px;
+}
+
+/* JS UTILITY CLASSES */
+.share-mobile-off,
+.share-desktop-off {
+    display: none;
+}
+
+.profile-off {
+    display: flex;
+}
+
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1300px) {
+    main {
+        width: 80%;
+    }
+
+    .image {
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        width: 80%;
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+
+    .image {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .showcase {
+        width: 100%;
+        padding: 1rem 0 0 0;
+    }
+    .showcase > * {
+        margin: 20px;
+    }
+
+    .primary-heading {
+        font-size: 1.5rem;
+    }
+
+    .showcase-text {
+        font-size: 1rem;
+    }
+    .profile {
+        margin: 0px 20px;
+    }
+
+    .share-mobile {
+        width: auto;
+        margin: 0;
+        border-radius: 0 0 10px 10px;
+
+        /* padding: 0; */
+    }
+}
