@@ -32,9 +32,9 @@ Users should be able to:
 
 ### Links
 
--   Frontend Mentor Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/)
--   Live Site URL: [Live Hosted Website](https://mharvel13.github.io/)
--   Github Solution URL: [Github Hosted Codes](https://github.com/Mharvel13/)
+-   Frontend Mentor Solution URL: [Frontend Mentor Solution Page](https://www.frontendmentor.io/solutions/article-preview-component-solution-r9asf4xvsx)
+-   Live Site URL: [Live Hosted Website](https://mharvel13.github.io/Article-Preview-Component-Master/)
+-   Github Solution URL: [Github Hosted Codes](https://github.com/Mharvel13/Article-Preview-Component-Master)
 
 ## My process
 
