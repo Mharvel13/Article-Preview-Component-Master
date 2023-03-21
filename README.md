@@ -51,7 +51,8 @@ Users should be able to:
 #### HOW TO TOGGLE ELEMENTS BASED ON SCREEN-SIZES
 
 The challange involved displaying the share popup box/area differently, depending on the screen sizes and mobile or desktop oreintation of the device. i was able to aachieve this through the use of the ``` windows.innerWidth ``` property on the windows object.
-below is a code snippet of how i was able to achieve this
+
+Below is a code snippet of how i was able to achieve this
 
 
 ```js
